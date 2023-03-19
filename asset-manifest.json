@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Fibo/static/css/main.947e030f.css",
+    "main.js": "/Fibo/static/js/main.13bf40cd.js",
+    "static/media/TFCC stickers copy_page-0002 - Edited.png": "/Fibo/static/media/TFCC stickers copy_page-0002 - Edited.9d03bbd0393ab4d04385.png",
+    "static/media/Frame 47326.png": "/Fibo/static/media/Frame 47326.16a78cff2c5503248581.png",
+    "static/media/Fibo Left.png": "/Fibo/static/media/Fibo Left.4055c2a71ba6da0054dc.png",
+    "index.html": "/Fibo/index.html",
+    "main.947e030f.css.map": "/Fibo/static/css/main.947e030f.css.map",
+    "main.13bf40cd.js.map": "/Fibo/static/js/main.13bf40cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.947e030f.css",
+    "static/js/main.13bf40cd.js"
+  ]
+}
