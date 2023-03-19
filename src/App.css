@@ -1,38 +1,186 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.left {
+  background-color: #272727;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left img {
+  max-width: 60%;
+  max-height: 60%;
+  border-radius: 25px;
+}
+
+.left h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: rgb(218, 218, 218);
+}
+
+.left p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(247, 247, 247);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right {
+  background-color: #1E1E1E;;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right .brandName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right img {
+  max-width: 100px;
+  /* margin-bottom: 2rem; */
+}
+
+.right h5 {
+  max-width: 100%;
+  /* margin-bottom: 4rem; */
+  font-size: 1.5rem;
+}
+
+.right p {
+  font-size: 1rem;
+  color: #676767;
+}
+
+.brandName span {
+  color: #FF8D24;
+}
+
+.right .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h5 {
+  max-width: 300px;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #333333;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.input-group-addon {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 8px;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input[type="tel"] {
+  border: none;
+  padding: 8px;
+  font-size: 1.2rem;
+  background: transparent;
+  color: #cccccc;
+}
+
+input:focus {
+  outline: none;
+}
+
+.mobile {
+  background-color: #FF8D24;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 400;
+  width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.mobile:hover {
+  background-color: #e77408;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.google:hover {
+  background-color: #272727;
+}
+
+.google img {
+  max-width: 25px;
+}
+
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left {
+    flex-basis: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    flex-basis: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
